@@ -1,0 +1,989 @@
+/*
+Theme Name: Portfolio - Creative Personal Portfolio HTML5 Template
+Theme URI: http://sumon.forhadart.com/
+Author: SS Designstudio
+Version: 1.0
+Description: This is html5 template for Personal Portfolio.
+*/
+/* CSS Indexing
+	1. THEME DEFAULT CSS
+	2. HEADER AREA CSS
+	3. SLIDER AREA CSS
+	4. ABOUT AREA CSS
+	5. SKILLS AREA CSS
+	6. SERVICE AREA CSS
+	7. PROCESS AREA CSS
+	8. PORTFOLIO AREA CSS
+	9. COUNTER AREA CSS
+	10. BLOG AREA CSS
+	11. TESTIMONIAL AREA CSS
+	12. CONTACT AREA CSS
+	13. FOOTER AREA CSS
+	14. BREADCRUMB AREA CSS
+	15. BLOG DETAIL AREA CSS
+	16. Pre Loader and scrollToTop
+*/
+
+/*----------------------------------
+--------- THEME DEFAULT CSS --------
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
+body {
+    line-height: 25px;
+    font-size: 16px;
+    color: #404040;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+/*----------------------------
+---------- RESET CSS ---------
+----------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 46px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+a {
+    transition: 0.4s;
+}
+a,
+a:hover {
+    color: #404040;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+select:focus,
+select:active {
+    box-shadow: none;
+    border: 0;
+    outline: 0
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+textarea {
+    background: transparent;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #00c2b1;
+    height: 40px;
+    margin-bottom: 30px;
+}
+textarea {
+    height: 100px;
+}
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.mt-45 {
+	margin-top: 45px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.sec-title {
+    text-align: center;
+}
+.sec-title h2 {
+    position: relative;
+	font-size: 36px;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+.sec-title h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 8px;
+    background: #00c2b1;
+    transition: all 0.4s;
+    margin: auto;
+    right: 0;
+}
+.sec-title h2:hover::before {
+    width: 100%;
+}
+.owl-nav div {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 40px;
+    background: #00c2b1;
+	border: 1px solid #00c2b1;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+	opacity: 0;
+    transition: 0.4s;
+    margin-top: -40px;
+	cursor: pointer;
+}
+.owl-nav div:hover {
+	background: transparent;
+}
+.owl-nav div.owl-next {
+    right: -10%;
+    left: auto;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 4px;
+}
+.owl-dot.active {
+    background: #00c2b1;
+}
+.btn-one {
+    background: #00c2b1;
+    border: 2px solid #00c2b1;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+	transition: all 0.4s;
+    text-transform: uppercase;
+    font-weight: 500;
+	cursor: pointer;
+}
+.btn-one:hover {
+    background: transparent;
+    border: 2px solid #00c2b1;
+    color: #fff;
+}
+
+/*--------------------------------------
+-------- HEADER AREA CSS START --------
+---------------------------------------*/
+.header {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+	transition: all 0.4s;
+    width: 100%;
+    z-index: 9;
+	opacity: 0.8;
+}
+.header a {
+    color: #fff;
+}
+.mainmenu {
+    text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 15px;
+}
+.mainmenu li a {
+    position: relative;
+    padding: 25px 0;
+	display: inline-block;
+}
+.mainmenu li a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #00c2b1;
+    transition: all 0.4s;
+}
+.mainmenu li a:hover::before,
+.mainmenu li a.active::before {
+    width: 100%;
+}
+.slicknav_menu {
+    margin: 15px 0;
+	padding: 0;
+    background: transparent;
+}
+.mainmenu {
+    display: block;
+}
+.slicknav_menu {
+	display: none;
+}
+
+/*--------------------------------------
+--------- HEADER AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SLIDER AREA CSS START --------
+---------------------------------------*/
+.slider {
+	background: url() no-repeat center / cover;
+	position: relative;
+	z-index: 1;
+	height: 680px;
+	padding-top: 80px;
+	overflow: hidden;
+}
+.slider::before,
+.breadcrumb-area::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+	opacity: 0.5;
+}
+.single-slide h2 {
+    color: #fff;
+}
+.single-slide h1 {
+    color: #00c2b1;
+    margin: 15px 0;
+}
+.single-slide {
+    text-align: center;
+}
+.single-slide .btn-one {
+    margin: 12px;
+}
+.btn-two {
+    background: transparent;
+}
+.btn-two:hover {
+    background: #00c2b1;
+}
+.display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.slider:hover .owl-nav div.owl-prev {
+	opacity: 1;
+	left: 0;
+}
+.slider:hover .owl-nav div.owl-next {
+	opacity: 1;
+	right: 0;
+}
+/*--------------------------------------
+--------- SLIDER AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- ABOUT AREA CSS START --------
+---------------------------------------*/
+#about,
+.blog-area {
+	overflow: hidden;
+}
+.single-about-box {
+	margin-top: 50px;
+}
+.single-about-box ul li span {
+    width: 146px;
+    display: inline-block;
+}
+.single-about-box ul {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.single-about-box ul li {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.single-about-box p {
+    margin-bottom: 20px;
+}
+.single-about-box .btn-one {
+    margin-top: 55px;
+}
+.single-about-box .btn-one:hover {
+    color: #00c2b1;
+}
+/*--------------------------------------
+--------- ABOUT AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SKILLS AREA CSS START --------
+---------------------------------------*/
+.skills {
+	background: #ebebeb;
+}
+.single-skill-box {
+	margin: 50px 5px 0;
+	line-height: 35px;
+	position: relative;
+}
+.single-skill-box>div>div {
+    width: 100% !important;
+    height: 100% !important;
+}
+.cir {
+    width: 100% !important;
+    height: 100% !important;
+    top:  0 !important;
+    left: 0 !important;
+}
+.demo-value {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*--------------------------------------
+--------- SKILLS AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SERVICE AREA CSS START --------
+---------------------------------------*/
+.service-box-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    margin: auto;
+    background: #00c2b1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 65px;
+	transition: all 0.4s;
+}
+.single-service-box {
+    margin-top: 35px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 40px 15px 30px;
+    text-align: center;
+}
+.single-service-box:hover .service-box-icon {
+    background: #000;
+}
+.single-service-box h3 {
+    margin: 25px 0 17px;
+}
+.service-area .sec-title {
+	margin-bottom: 20px;
+}
+.single-service-box h4 {
+    font-weight: 400;
+    line-height: 30px;
+	font-size: 17px;
+}
+/*--------------------------------------
+--------- SERVICE AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- PROCESS AREA CSS START --------
+---------------------------------------*/
+.process {
+	background: #ebebeb;
+}
+.process .sec-title {
+	margin-bottom: 10px;
+}
+.single-process-box {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.single-process-box::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;
+    height: 50px;
+    background: #00c2b1;
+}
+.single-process-box h3 {
+    font-weight: 400;
+    margin-top: 18px;
+}
+.process .col-lg-3:last-child .single-process-box::after  {
+	display: none;
+}
+/*--------------------------------------
+--------- PROCESS AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- PORTFOLIO AREA CSS START --------
+---------------------------------------*/
+.portfolio-menu ul li {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 5px;
+    border: 1px solid #00c2b1;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.portfolio-menu ul li.active, .portfolio-menu ul li:hover {
+    background: #00c2b1;
+    color: #fff;
+}
+.portfolio-menu {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.single-portfolio-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    margin-top: 30px;
+    background-color: #EBEBEB;
+}
+.single-portfolio-box::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 0%;
+    height: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.single-portfolio-box:hover::before {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-bg-1 {
+	background-image:url();
+}
+.portfolio-bg-2 {
+	background-image:url();
+}
+.portfolio-bg-3 {
+	background-image:url();
+}
+.portfolio-bg-4 {
+	background-image:url();
+}
+.portfolio-bg-5 {
+	background-image:url();
+}
+.portfolio-bg-6 {
+	background-image:url();
+}
+.portfolio-box-overlay {
+	transform: scale(0);
+    transition: all 0.4s;
+    opacity: 0;
+}
+.portfolio-box-overlay a {
+	color: #fff;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+}
+.portfolio-box-overlay a:hover {
+	border: 1px solid #fff;
+}
+.single-portfolio-box:hover .portfolio-box-overlay {
+    transform: scale(1);
+    opacity: 1;
+}
+/*--------------------------------------
+--------- PORTFOLIO AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- COUNTER AREA CSS START --------
+---------------------------------------*/
+.counter-area {
+	background: #ebebeb;
+	padding: 100px 0 45px;
+}
+.count-box {
+    text-align: center;
+    font-size: 24px;
+	margin: 0 0 75px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #00c2b1;
+}
+.count-box h2 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+/*--------------------------------------
+--------- COUNTER AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- BLOG AREA CSS START --------
+---------------------------------------*/
+.single-blog-post {
+    margin-top: 55px;
+}
+.single-blog-post h3 {
+    text-transform: uppercase;
+    margin: 35px 0 12px;
+}
+.single-blog-post a.btn-one.btn-two {
+    color: #404040;
+}
+.single-blog-post a:hover {
+    color: #00c2b1;
+}
+.single-blog-post h4 {
+	font-weight: 500;
+}
+.single-blog-post p {
+    margin: 15px 0 18px;
+    line-height: 30px;
+}
+/*--------------------------------------
+--------- BLOG AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- TESTIMONIAL AREA CSS START --------
+---------------------------------------*/
+.testimonial {
+	background: #ebebeb;
+}
+.testimonial-box {
+    text-align: center;
+	max-width: 920px;
+	margin: auto;
+}
+.testimonial-box a:hover {
+	color: #00c2b1;
+}
+.testimonial-box h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.testimonial-box h3 {
+    font-weight: 500;
+    margin: 7px 0 35px;
+}
+.testimonial .owl-carousel .owl-item img {
+    width: 150px;
+    margin: auto;
+    background: #fff;
+    border-radius: 100%;
+}
+/*--------------------------------------
+--------- TESTIMONIAL AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- CONTACT AREA CSS START --------
+---------------------------------------*/
+.single-contact-box {
+    margin-top: 40px;
+}
+.single-contact-box li {
+    display: flex;
+    margin-bottom: 40px;
+    line-height: 30px;
+	font-weight: 400;
+}
+.single-contact-box li:last-child {
+	margin-bottom: 0;
+}
+.single-contact-box li a {
+    display: block;
+}
+.contact-box-icon {
+    width: 70px;
+	padding-left: 0;
+    font-size: 40px;
+    transition: all 0.4s;
+}
+.single-contact-box li:hover .contact-box-icon {
+    color: #00c2b1;
+	padding-left: 10px;
+}
+form .btn-one {
+	width: 100%;
+	padding: 8px;
+}
+.single-contact-box .btn-one:hover {
+    color: #00c2b1;
+}
+/*--------------------------------------
+--------- CONTACT AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- FOOTER AREA CSS START --------
+---------------------------------------*/
+.footer {
+	background: #ebebeb;
+	padding: 60px 0;
+}
+.footer-info {
+    font-weight: 400;
+}
+.footer-info li {
+    display: inline-block;
+}
+.footer-info li a {
+    color: #fff;
+    background: #404040;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+.footer-info li a:hover {
+    background: #00c2b1;
+}
+/*--------------------------------------
+--------- FOOTER AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- BREADCRUMB AREA CSS START --------
+---------------------------------------*/
+.breadcrumb-area {
+    position: relative;
+    background: url() no-repeat center / cover;
+    z-index: 1;
+    padding: 175px 0 90px;
+    text-align: center;
+	color: #fff;
+}
+.breadcrumb-area h1 {
+	color: #00c2b1;
+}
+.breadcrumb-area li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb-area li::before {
+    position: absolute;
+    top: 6px;
+    margin: auto;
+    content: "\f105";
+    font-family: fontawesome;
+    right: -10px;
+}
+.breadcrumb-area li:last-child::before {
+	display: none;
+}
+.breadcrumb-area a {
+	color: #fff;
+}
+.breadcrumb-area a:hover {
+	color: #00c2b1;
+}
+/*--------------------------------------
+--------- BREADCRUMB AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- BLOG DETAIL AREA CSS START --------
+---------------------------------------*/
+.widget-title {
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.widget li {
+    margin-bottom: 12px;
+}
+.widget {
+    margin-bottom: 65px;
+    font-weight: 400;
+}
+.widget li:last-child {
+    margin-bottom: 0;
+}
+.widget .related-post span {
+    font-size: 14px;
+}
+.related-post {
+    margin-bottom: 45px;
+}
+.related-post img {
+    border: 1px solid #eee;
+}
+.related-post p {
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.widget.widget_tags {
+	font-weight: 300;
+}
+.widget.widget_tags a {
+	display: inline-block;
+	padding: 5px 10px;
+	margin-left: 5px;
+	margin-bottom: 8px;
+	border: 1px solid #404040;
+}
+.widget a:hover {
+	color: #00c2b1;
+}
+.widget.widget_tags a:hover {
+	border: 1px solid #00c2b1;
+}
+.widget form {
+    position: relative;
+}
+.widget form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #404040;
+}
+.widget form input {
+    margin-bottom: 0;
+    padding-right: 40px;
+    border-color: #aaa;
+}
+article.post h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+.comments-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 35px 0 42px;
+}
+article.post h4 {
+    font-weight: 500;
+    line-height: 35px;
+}
+article.post p {
+    margin-top: 25px;
+}
+.comment-list {
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.author-name h4 {
+    font-weight: 500;
+}
+.comment-top-area {
+    display: flex;
+    margin-bottom: 12px;
+}
+.comment-metadata {
+    text-align: right;
+}
+.comment-top-area>div {
+    flex: 1;
+}
+.comment-author {
+    width: 70px;
+    float: left;
+    background: #EBEBEB;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.comment-content {
+    padding-left: 90px;
+    font-size: 14px;
+}
+.comment-content p {
+    margin-bottom: 5px;
+}
+.children {
+    margin: 40px 0 40px 100px;
+}
+.blog-detail {
+	margin-left: 20px;
+}
+.blog-detail .btn-two {
+    color: #404040;
+	font-size: 14px;
+    text-transform: capitalize;
+    border: 1px solid #404040;
+}
+.blog-detail .btn-two:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.comment-reply-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.comment-respond {
+    margin-top: 90px;
+}
+.comment-respond .btn-one:hover {
+	color: #000;
+}
+/*--------------------------------------
+--------- BLOG DETAIL AREA CSS END ---------
+---------------------------------------*/
+
+/* Pre Loader and scrollToTop Style */
+a.scrollToTop {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #404040;
+    display: inline-block;
+    color: #fff;
+}
+a.scrollToTop:hover {
+	background: #00c2b1;
+}
+.spinner {
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background: #333333;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: -75px;
+}
+.pre-loader {
+    position: fixed;
+    top: 0;
+    z-index: 988899;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00c2b1;
+}
+.spinner::before, .spinner::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.spinner::before {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	margin-left: -60px;
+	margin-top: -60px;
+	background: #eee;
+}
+.spinner::after {
+	width: 0;
+	height: 0;
+	box-shadow: 45px 0px 1px 5px rgba(130, 130, 130, 0.94444), 41.96125px 16.25587px 1px 5px rgba(130, 130, 130, 0.88889), 33.2554px 30.3163px 1px 5px rgba(130, 130, 130, 0.83333), 20.05823px 40.28235px 1px 5px rgba(130, 130, 130, 0.77778), 4.15208px 44.80804px 1px 5px rgba(130, 130, 130, 0.72222), -12.31483px 43.28215px 1px 5px rgba(130, 130, 130, 0.66667), -27.11856px 35.91078px 1px 5px rgba(130, 130, 130, 0.61111), -38.25977px 23.68945px 1px 5px rgba(130, 130, 130, 0.55556), -44.23379px 8.26873px 1px 5px rgba(130, 130, 130, 0.5), -44.23379px -8.26873px 1px 5px rgba(130, 130, 130, 0.44444), -38.25977px -23.68945px 1px 5px rgba(130, 130, 130, 0.38889), -27.11856px -35.91078px 1px 5px rgba(130, 130, 130, 0.33333), -12.31483px -43.28215px 1px 5px rgba(130, 130, 130, 0.27778), 4.15208px -44.80804px 1px 5px rgba(130, 130, 130, 0.22222), 20.05823px -40.28235px 1px 5px rgba(130, 130, 130, 0.16667), 33.2554px -30.3163px 1px 5px rgba(130, 130, 130, 0.11111), 41.96125px -16.25587px 1px 5px rgba(130, 130, 130, 0.05556);
+	border-radius: 50%;
+}
+.spinner::after {
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* END of Pre Loader Style */

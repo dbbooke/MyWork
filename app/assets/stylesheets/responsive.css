@@ -1,0 +1,267 @@
+@media only screen and (max-width:1199px){
+	.slider {
+		height: 600px;
+	}
+	.single-about-box ul li span {
+		width: 100px;
+	}
+	.single-about-box ul {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.single-about-box ul li {
+		line-height: 28px;
+		margin-bottom: 7px;
+	}
+	.single-about-box .btn-one {
+		margin-top: 15px;
+	}
+	.ab {
+		height: 200px !important;
+	}
+	.single-service-box h4,
+	.single-blog-post h4 {
+		font-size: 16px;
+	}
+	.single-blog-post h3 {
+		font-size: 18px;
+		margin: 25px 0 10px;
+	}
+	.footer {
+		padding: 50px 0;
+	}
+}
+@media only screen and (max-width:991px){
+	body {
+		font-size: 15px;
+	}
+	.mainmenu li {
+		margin: 0 7px;
+		font-size: 14px;
+	}
+	.mainmenu li a {
+		padding: 22px 0 18px;
+	}
+	.single-slide {
+		padding: 0 45px;
+	}
+	.single-slide h2 {
+		font-size: 32px;
+	}
+	.single-slide h1 {
+		font-size: 45px;
+	}
+	.slider {
+		height: 500px;
+	}
+	.ab {
+		height: 300px !important;
+	}
+	.single-about-box img {
+		margin-top: 25px;
+	}
+	.ptb-100 {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+	.single-skill-box {
+		margin: 50px 15px 0;
+	}
+	.process .col-lg-3:nth-child(even) .single-process-box::after  {
+		display: none;
+	}
+	.footer {
+		padding: 30px 0;
+	}
+	.breadcrumb-area {
+		padding: 150px 0 70px;
+	}
+	.breadcrumb-area h1 {
+		font-size: 30px;
+	}
+	.sidebar {
+		max-width: 400px;
+		margin: auto;
+	}
+	.widget {
+		margin-bottom: 40px;
+	}
+	.widget li {
+		margin-bottom: 10px;
+	}
+	.widget-title {
+		margin-bottom: 20px;
+	}
+	.blog-detail {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.comment-respond {
+		margin-top: 60px;
+	}
+	.comment-reply-title {
+		margin-bottom: 28px;
+	}
+}
+@media only screen and (max-width:767px){
+	.mainmenu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+	.header {
+		border-bottom: 1px solid #fff;
+		opacity: 1;
+	}
+	.slicknav_nav a:hover ,.slicknav_nav a.active {
+		background: transparent;
+		color: #fff;
+		text-decoration: underline;
+	}
+	.single-about-box {
+		margin-top: 30px;
+	}
+	.single-about-box ul {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.single-about-box ul li {
+	    margin-bottom: 10px;
+	}
+	.single-skill-box {
+		margin: 30px auto 0;
+		max-width: 280px;
+	}
+	.ab {
+		height: 265px !important;
+	}
+	.portfolio-menu ul li {
+		padding: 5px 10px;
+		margin: 5px;
+	}
+	.single-portfolio-box {
+		height: 250px;
+	}
+	.footer-info {
+		margin: 10px 0;
+		text-align: center;
+	}
+	ul.slicknav_nav {
+		position: absolute;
+		background: #000;
+		right: 15px;
+		top: 100%;
+	}
+	article.post h3 {
+		margin-top: 35px;
+		font-size: 20px;
+	}
+	article.post h4 {
+		line-height: 20px;
+		margin-top: 8px;
+		font-size: 14px;
+	}
+	.breadcrumb-area h1 {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+	.breadcrumb-area li::before {
+		top: 0;
+		right: -5px;
+	}
+	.breadcrumb-area li {
+		display: inline-block;
+		margin: 5px 0 0;
+		padding: 0px 5px;
+		position: relative;
+		z-index: 1;
+	}
+}
+@media only screen and (max-width:576px){	
+	.single-portfolio-box {
+		margin: 15px auto;
+		max-width: 300px;
+	}
+	.counter-area {
+		padding: 80px 0 60px;
+	}
+	.count-box {
+		margin: 0 auto 40px;
+		max-width: 300px;
+		padding-bottom: 15px;
+	}
+	.sec-title h2 {
+		font-size: 22px;
+		padding-bottom: 12px;
+	}
+	.single-contact-box li {
+		margin-bottom: 15px;
+	}
+	.slider {
+		height: auto;
+		padding: 180px 0 100px;
+	}
+	.slider .display-table,
+	.slider .display-table-cell {
+		display: block;
+	}
+	.single-process-box::after {
+		display: none;
+	}
+	.single-slide {
+		padding: 0 5px;
+	}
+	.owl-nav div {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		margin-top: -12px;
+	    font-size: 12px;
+	}
+	.slider:hover .owl-nav div.owl-prev {
+		left: -13px;
+	}
+	.slider:hover .owl-nav div.owl-next {
+		right: -13px;
+	}
+	.single-slide h2 {
+		font-size: 20px;
+	}
+	.single-slide h1 {
+		font-size: 26px;
+	}
+	.single-slide .btn-one {
+		margin: 8px;
+		padding: 5px 12px;
+	}
+	.testimonial-box h3 {
+		margin: 5px 0 20px;
+		font-size: 20px;
+	}
+	.testimonial-box h2 {
+		font-size: 24px;
+		margin-top: 25px;
+	}
+	.comment-top-area {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.comment-metadata {
+		text-align: left;
+		margin-top: 5px;
+	}
+	.comment-content {
+		padding-left: 70px;
+	}
+	.comment-author {
+		width: 60px;
+	}
+	.children {
+		margin: 30px 0 30px 25px;
+	}
+	.comment-reply-title {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+}
