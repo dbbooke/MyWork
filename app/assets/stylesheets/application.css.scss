@@ -763,7 +763,7 @@ textarea:focus {
 -------- SLIDER AREA CSS START --------
 ---------------------------------------*/
 .slider {
-	background: url() no-repeat center / cover;
+	background: url('/assets/9l.jpg') no-repeat center / cover;
 	position: relative;
 	z-index: 1;
 	height: 680px;
@@ -988,22 +988,22 @@ textarea:focus {
     height: 100%;
 }
 .portfolio-bg-1 {
-	background-image:url();
+	background-image:url('/assets/L4.jpg');
 }
 .portfolio-bg-2 {
-	background-image:url();
+	background-image:url('/assets/L5.jpg');
 }
 .portfolio-bg-3 {
-	background-image:url();
+	background-image:url('/assets/L6.jpg');
 }
 .portfolio-bg-4 {
-	background-image:url();
+	background-image:url('/assets/l7.png');
 }
 .portfolio-bg-5 {
-	background-image:url();
+	background-image:url('/assets/lp2.jpg');
 }
 .portfolio-bg-6 {
-	background-image:url();
+	background-image:url('/assets/lp3.jpg');
 }
 .portfolio-box-overlay {
 	transform: scale(0);
