@@ -1,0 +1,79 @@
+<section class="ptb-100" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+					    	<h2>Contact With Me!</h2>
+					    </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+					    <div class="single-contact-box">
+							<ul>
+								<li>
+									<div class="contact-box-icon">
+										<div class="display-table">
+											<div class="display-table-cell">
+												<i class="fa fa-phone"></i>
+											</div>
+										</div>
+									</div>
+									<div class="contact-box-text">
+										<a href="#">(702) 787-6726</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-box-icon">
+										<div class="display-table">
+											<div class="display-table-cell">
+												<i class="fa fa-globe"></i>
+											</div>
+										</div>
+									</div>
+									<div class="contact-box-text">
+										<a href="#">yourmail@website.com</a>
+										<a href="#">www.yourdomain.com</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-box-icon">
+										<div class="display-table">
+											<div class="display-table-cell">
+												<i class="fa fa-map-marker"></i>
+											</div>
+										</div>
+									</div>
+									<div class="contact-box-text">
+										Las Vegas Strip, NV
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="single-contact-box">
+					<%= form_for @contact do |f| %>
+						<%= f.label :name %> <br>
+						<%= f.text_field :name, required: true %>
+
+						<br>
+
+						<%= f.label :email %> <br> 
+						<%= f.text_field :email, required: true %>
+
+						<br>
+
+						<%= f.label :message %> <br> 
+						<%= f.text_area :message, as: :text %>
+
+					<div class="hidden">
+						<%= f.label :nickname %> <br> 
+						<%= f.text_field :nickname, hint: 'Leave this field blank' %>
+					</div>
+
+					<%= f.submit 'Send Message', class: 'btn-one'
+
+					<% end %>
+				</div>
+			</div>
+		</section>
